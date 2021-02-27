@@ -18,7 +18,7 @@
         --symlink ${./app.py} /app.py \
         --ro-bind FLAG /FLAG \
         --ro-bind /nix/store /nix/store \
-        -- ${pythonDeps}/bin/flask run
+        -- ${pythonDeps}/bin/flask run $@
       '';
     };
 }
